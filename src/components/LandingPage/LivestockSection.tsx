@@ -25,9 +25,9 @@ const livestockProducts = [
 
 export default function LivestockPage() {
   return (
-    <section className="bg-gray-100 min-h-screen py-12">
+    <section className="bg-gray-100 min-h-screen lg:py-12 py-[9]">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="lg:text-4xl text-[20px] font-bold lg:text-center text-left text-gray-900 mb-8">
           Our <span className="text-green-800">Livestock Products</span>
         </h2>
 
@@ -45,10 +45,10 @@ export default function LivestockPage() {
                 height={300}
                 className="rounded-md object-cover w-full h-52"
               />
-              <h3 className="text-2xl font-semibold text-gray-800 mt-4">
+              <h3 className="lg:text-2xl text-[13px] font-semibold text-gray-800 mt-4">
                 {product.name}
               </h3>
-              <p className="text-gray-600 mt-2">{product.description}</p>
+              <p className="text-gray-600 mt-2 text-[12px]">{product.description}</p>
             </div>
           ))}
         </div>

@@ -72,7 +72,7 @@ export default function ServicesGallery() {
   return (
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="lg:text-4xl text-[20px] font-bold lg:text-center text-left text-gray-900 mb-8">
           Services <span className="text-green-800">Gallery</span>
         </h2>
 

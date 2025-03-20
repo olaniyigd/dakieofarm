@@ -36,7 +36,7 @@ export default function RootLayout({
         </div>
 
         {/* Main content with padding to avoid overlapping */}
-        <main className="flex-1 lg:pt-[80px] pt-[70px] overflow-y-auto">{children}</main>
+        <main className="flex-1 lg:pt-[80px] pt-[50px] overflow-y-auto">{children}</main>
 
         <Footer />
       </body>

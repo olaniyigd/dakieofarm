@@ -56,10 +56,10 @@ export default function Hero() {
 
           {/* Content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-30">
-            <h1 className="text-4xl md:text-6xl font-bold">{slide.title}</h1>
-            <p className="mt-2 text-lg md:text-2xl">{slide.description}</p>
+            <h1 className="text-[25px] lg:text-6xl font-bold">{slide.title}</h1>
+            <p className="mt-2 text-[13px] lg:text-2xl">{slide.description}</p>
             <Link href="/about">
-              <button className="mt-4 px-6 py-3 bg-green-800 text-white rounded-md text-lg font-medium hover:bg-green-700 transition duration-300">
+              <button className="mt-4 lg:px-6 px-4 lg:py-3 py-2 bg-green-800 text-white rounded-md lg:text-lg text-[13px] font-medium hover:bg-green-700 transition duration-300">
                 Learn More
               </button>
             </Link>

@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-16 bg-gray-100">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="lg:text-4xl text-[20px] font-bold lg:text-center text-left text-gray-900 mb-8">
           Contact <span className="text-green-800">Us</span>
         </h2>
 
@@ -27,7 +27,7 @@ export default function ContactSection() {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full p-2 outline-none bg-transparent text-black placeholder-gray-500"
+              className="w-full p-2 outline-none lg:text-[14px] text-[12px] bg-transparent text-black placeholder-gray-500"
             />
           </div>
 
@@ -38,7 +38,7 @@ export default function ContactSection() {
               name="phone"
               placeholder="Your Phone Number"
               required
-              className="w-full p-2 outline-none bg-transparent text-black placeholder-gray-500"
+              className="w-full p-2 outline-none bg-transparent lg:text-[14px] text-[12px] text-black placeholder-gray-500"
             />
           </div>
 
@@ -48,7 +48,7 @@ export default function ContactSection() {
               name="message"
               placeholder="Your Message"
               required
-              className="w-full p-2 outline-none bg-transparent text-black placeholder-gray-500 h-24 resize-none"
+              className="w-full p-2 outline-none bg-transparent lg:text-[14px] text-[12px] text-black placeholder-gray-500 h-24 resize-none"
             />
           </div>
 

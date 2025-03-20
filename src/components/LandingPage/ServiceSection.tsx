@@ -33,7 +33,7 @@ export default function ServicesSection() {
   return (
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="lg:text-4xl text-[20px] font-bold lg:text-center text-left text-gray-900 mb-8">
           Our <span className="text-green-800">Services</span>
         </h2>
 
@@ -45,8 +45,8 @@ export default function ServicesSection() {
               className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition duration-300"
             >
               <div className="mb-4 flex justify-center">{service.icon}</div>
-              <h3 className="text-2xl font-semibold text-gray-800">{service.title}</h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
+              <h3 className="lg:text-2xl text-[13px] font-semibold text-gray-800">{service.title}</h3>
+              <p className="text-gray-600 mt-2 text-[12px]">{service.description}</p>
             </div>
           ))}
         </div>

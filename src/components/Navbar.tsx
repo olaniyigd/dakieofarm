@@ -16,15 +16,19 @@ export default function Navbar() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false)
+      setMenuOpen(false);
     } else {
       router.push(`/#${sectionId}`); // Fallback if not on the homepage
-      setMenuOpen(false)
+      setMenuOpen(false);
     }
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <nav className="bg-green-800 text-white h-[13vh] flex items-center">
+    <nav className="bg-green-800 text-white lg:h-[13vh] h-[10vh] flex items-center">
       <div className="container mx-auto flex justify-between items-center w-full px-4">
         {/* Logo */}
         <Link href="/">
@@ -33,7 +37,7 @@ export default function Navbar() {
             alt="Farm Logo" 
             width={150} 
             height={50} 
-            className="object-contain"
+            className="object-contain lg:w-[150px] lg:h-[100px] w-[90px] h-[100px]"
           />
         </Link>
 
@@ -49,7 +53,7 @@ export default function Navbar() {
 
           {/* Contact Us Button */}
           <Link 
-          href="#" onClick={(e) => handleScroll(e, "contact")}
+            href="#" onClick={(e) => handleScroll(e, "contact")}
             className="bg-white text-green-800 px-4 py-2 rounded-lg hover:bg-gray-200"
           >
             Contact Us
@@ -67,9 +71,9 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute top-[12vh] z-50 left-0 w-full bg-green-800 p-4 md:hidden">
-          <Link href="/" className="block py-2">Home</Link>
-          <Link href="/about-us" className="block py-2">About</Link>
+        <div className="absolute top-[8vh] z-50 left-0 w-full bg-green-800 p-4 md:hidden">
+          <Link href="/" className="block py-2" onClick={closeMenu}>Home</Link>
+          <Link href="/about-us" className="block py-2" onClick={closeMenu}>About</Link>
           <Link href="#" onClick={(e) => handleScroll(e, "livestock")} className="block py-2">Livestock</Link>
           <Link href="#" onClick={(e) => handleScroll(e, "services")} className="block py-2">Services</Link>
           <Link href="#" onClick={(e) => handleScroll(e, "contact")} 
