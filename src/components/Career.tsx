@@ -34,55 +34,57 @@ export default function Career() {
         encType="multipart/form-data"
         className="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg"
       >
-        <h2 className="lg:text-4xl text-[20px] font-bold text-green-800 mb-6 lg:text-center text-left">Career Application</h2>
+        <h2 className="lg:text-4xl text-[20px] font-bold text-green-800 mb-6 lg:text-center text-left">
+          Career Application
+        </h2>
 
         {/* Full Name */}
         <div className="mb-4">
-          <label className="block text-gray-700 lg:text-[16px] text-[12px]">Full Name</label>
+          <label className="block text-gray-700 text-base">Full Name</label>
           <input
             type="text"
             name="fullName"
             placeholder="Enter full name"
             required
             onChange={handleChange}
-            className="w-full p-3 border lg:text-[14px] text-[12px] border-gray-300 rounded-md bg-white text-black"
+            className="w-full p-3 border border-gray-300 rounded-md bg-white text-black text-base"
           />
         </div>
 
         {/* Phone Number */}
         <div className="mb-4">
-          <label className="block text-gray-700 lg:text-[16px] text-[12px]">Phone Number</label>
+          <label className="block text-gray-700 text-base">Phone Number</label>
           <input
             type="tel"
             name="phone"
             placeholder="Enter phone number"
             required
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 lg:text-[14px] text-[12px] rounded-md bg-white text-black"
+            className="w-full p-3 border border-gray-300 rounded-md bg-white text-black text-base"
           />
         </div>
 
         {/* Address */}
         <div className="mb-4">
-          <label className="block text-gray-700 lg:text-[16px] text-[12px]">Address</label>
+          <label className="block text-gray-700 text-base">Address</label>
           <input
             type="text"
             name="address"
             placeholder="Enter address"
             required
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 lg:text-[14px] text-[12px] rounded-md bg-white text-black"
+            className="w-full p-3 border border-gray-300 rounded-md bg-white text-black text-base"
           />
         </div>
 
         {/* Position Applied For */}
         <div className="mb-4">
-          <label className="block text-gray-700 lg:text-[16px] text-[12px]">Position Applied For</label>
+          <label className="block text-gray-700 text-base">Position Applied For</label>
           <select
             name="position"
             required
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 lg:text-[14px] text-[12px] rounded-md bg-white text-black"
+            className="w-full p-3 border border-gray-300 rounded-md bg-white text-black text-base"
           >
             <option value="">Select a position</option>
             <option value="Vet. Doctor">Vet. Doctor</option>
@@ -96,27 +98,27 @@ export default function Career() {
 
         {/* Email */}
         <div className="mb-4">
-          <label className="block text-gray-700 lg:text-[16px] text-[12px]">Email</label>
+          <label className="block text-gray-700 text-base">Email</label>
           <input
             type="email"
             name="email"
             placeholder="Enter email"
             required
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 lg:text-[14px] text-[12px] rounded-md bg-white text-black"
+            className="w-full p-3 border border-gray-300 rounded-md bg-white text-black text-base"
           />
         </div>
 
         {/* Resume Upload */}
         <div className="mb-4">
-          <label className="block text-gray-700 lg:text-[16px] text-[12px]">Upload Resume (PDF)</label>
+          <label className="block text-gray-700 text-base">Upload Resume (PDF)</label>
           <input
             type="file"
             name="resume"
             accept="application/pdf"
             required
             onChange={handleFileChange}
-            className="w-full p-3 border border-gray-300 lg:text-[14px] text-[12px] rounded-md bg-white text-black"
+            className="w-full p-3 border border-gray-300 rounded-md bg-white text-black text-base"
           />
         </div>
 
@@ -127,7 +129,7 @@ export default function Career() {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-green-800 hover:bg-green-700 text-white lg:text-[14px] text-[12px] font-bold py-3 rounded-md"
+          className="w-full bg-green-800 hover:bg-green-700 text-white font-bold py-3 rounded-md text-base"
         >
           Submit Application
         </button>
