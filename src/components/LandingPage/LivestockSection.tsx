@@ -26,7 +26,7 @@ const livestockProducts = [
 export default function LivestockPage() {
   return (
     <section className="bg-gray-100 min-h-screen lg:py-12 py-[9]">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+      <div data-aos="zoom-in" className="container mx-auto px-6 md:px-12 lg:px-20">
         <h2 className="lg:text-4xl text-[20px] font-bold lg:text-center text-left text-gray-900 mb-8">
           Our <span className="text-green-800">Livestock Products</span>
         </h2>

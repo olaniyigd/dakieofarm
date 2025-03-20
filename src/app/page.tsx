@@ -10,14 +10,14 @@ export default function Home() {
    <>
       <Hero />
       <AboutUs />
-      <section id="livestock">
+      <section  id="livestock">
       <LivestockPage />
       </section>
-      <section id="services">
+      <section  id="services">
       <ServicesSection />
       </section>
       <ServicesGallery />
-      <section id="contact">
+      <section  id="contact">
       <ContactSection />
       </section>
    </>

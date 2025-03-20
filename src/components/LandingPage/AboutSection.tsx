@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function AboutUs() {
   return (
-    <section className="bg-gray-100 lg:py-16 py-[13px]">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+    <section  className="bg-gray-100 lg:py-16 py-[13px]">
+      <div data-aos="zoom-in" className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex flex-col-reverse md:flex-row items-center gap-10">
           {/* Text Content */}
           <div className="md:w-1/2">
