@@ -27,7 +27,7 @@ export default function ContactSection() {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full p-2 outline-none lg:text-[14px] text-[12px] bg-transparent text-black placeholder-gray-500"
+              className="w-full p-2 outline-none text-[16px] bg-transparent text-black placeholder-gray-500"
             />
           </div>
 
@@ -38,7 +38,7 @@ export default function ContactSection() {
               name="phone"
               placeholder="Your Phone Number"
               required
-              className="w-full p-2 outline-none bg-transparent lg:text-[14px] text-[12px] text-black placeholder-gray-500"
+              className="w-full p-2 outline-none text-[16px] bg-transparent text-black placeholder-gray-500"
             />
           </div>
 
@@ -48,7 +48,7 @@ export default function ContactSection() {
               name="message"
               placeholder="Your Message"
               required
-              className="w-full p-2 outline-none bg-transparent lg:text-[14px] text-[12px] text-black placeholder-gray-500 h-24 resize-none"
+              className="w-full p-2 outline-none text-[16px] bg-transparent text-black placeholder-gray-500 h-24 resize-none"
             />
           </div>
 

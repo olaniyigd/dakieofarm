@@ -18,7 +18,7 @@ export default function AboutUs() {
             </p>
            
             <button className="mt-6 lg:px-6 px-4 lg:py-3 py-2 bg-green-800 text-white rounded-md lg:text-lg text-[12px] font-medium hover:bg-green-700 transition duration-300">
-             <Link href="/"> Learn More </Link>
+             <Link href="/about-us"> Learn More </Link>
             </button>
           </div>
 
