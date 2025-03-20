@@ -8,32 +8,36 @@ const services = [
     title: "Livestock Delivery",
     icon: <FaTruck className="text-green-800 text-5xl" />,
     description: "We provide fast and safe delivery of livestock to your location.",
+    animation: "flip-left", // Alternate animation
   },
   {
     id: 2,
     title: "Veterinary Services",
     icon: <FaUserTie className="text-green-800 text-5xl" />,
     description: "Our expert veterinarians ensure your livestock stays healthy.",
+    animation: "flip-right",
   },
   {
     id: 3,
     title: "Consultation & Support",
     icon: <FaHandshake className="text-green-800 text-5xl" />,
     description: "We offer professional guidance on livestock farming and management.",
+    animation: "flip-left",
   },
   {
     id: 4,
     title: "Quality Assurance",
     icon: <FaShieldAlt className="text-green-800 text-5xl" />,
     description: "We guarantee top-quality livestock with thorough health checks.",
+    animation: "flip-right",
   },
 ];
 
 export default function ServicesSection() {
   return (
     <section className="bg-gray-100 py-12">
-      <div data-aos="zoom-in" className="container mx-auto px-6 md:px-12 lg:px-20">
-        <h2 className="lg:text-4xl text-[20px] font-bold lg:text-center text-left text-gray-900 mb-8">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        <h2  data-aos="zoom-in" className="lg:text-4xl text-[20px] font-bold lg:text-center text-left text-gray-900 mb-8">
           Our <span className="text-green-800">Services</span>
         </h2>
 
@@ -42,6 +46,7 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.id}
+              data-aos={service.animation} // Apply flip-left or flip-right dynamically
               className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition duration-300"
             >
               <div className="mb-4 flex justify-center">{service.icon}</div>
